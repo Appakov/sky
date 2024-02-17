@@ -211,6 +211,7 @@
 }
 
 .table-body {
+
   width: 95%;
   max-height: calc(89% - 1.6rem);
   background-color: #fffb;
@@ -225,8 +226,6 @@
 }
 
 table {
-  width: 100%;
-
   th {
     padding: 10px;
   }
@@ -235,10 +234,12 @@ table {
 table,
 th,
 td {
+
   padding: 20px 0;
   border-collapse: collapse;
   text-align: center;
 }
+
 
 th {
   background-color: #d5d1defe;
@@ -267,53 +268,4 @@ tr {
   transform: rotate(-90deg);
   letter-spacing: 3px;
   white-space: nowrap;
-}
-
-/* Для экранов шириной менее 768px */
-@media screen and (max-width: 768px) {
-  .time-table__title {
-    flex-direction: column;
-    /* Изменяем направление flex-контейнера */
-    align-items: flex-start;
-    /* Выравниваем элементы по левому краю */
-  }
-
-  .menu-nav {
-    flex-wrap: wrap;
-    /* Разрешаем перенос элементов на новую строку */
-    justify-content: center;
-    /* Выравниваем элементы по центру */
-  }
-
-  .menu-nav__list {
-    width: 50%;
-    /* Задаем ширину элементов 50%, чтобы они размещались по два на строку */
-  }
-
-  .table-body {
-    max-height: calc(80vh - 1.6rem);
-    /* Уменьшаем максимальную высоту таблицы для лучшей адаптации */
-  }
-
-  table,
-  th,
-  td {
-    font-size: 14px;
-    /* Уменьшаем размер шрифта */
-  }
-}
-
-/* Для экранов шириной менее 576px */
-@media screen and (max-width: 576px) {
-  .menu-nav__list {
-    width: 100%;
-    /* Задаем ширину элементов 100%, чтобы они размещались по одному на строку */
-  }
-
-  table,
-  th,
-  td {
-    font-size: 12px;
-    /* Уменьшаем размер шрифта */
-  }
 }

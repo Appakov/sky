@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .wrapper {
   background-image: url("../images/back1.jpg");
   background-position: top center;
@@ -254,9 +253,6 @@
   height: 0;
 }
 
-table {
-  width: 100%;
-}
 table th {
   padding: 10px;
 }
@@ -291,55 +287,4 @@ tr:first-child {
           transform: rotate(-90deg);
   letter-spacing: 3px;
   white-space: nowrap;
-}
-
-/* Для экранов шириной менее 768px */
-@media screen and (max-width: 768px) {
-  .time-table__title {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    /* Изменяем направление flex-контейнера */
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    /* Выравниваем элементы по левому краю */
-  }
-  .menu-nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    /* Разрешаем перенос элементов на новую строку */
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    /* Выравниваем элементы по центру */
-  }
-  .menu-nav__list {
-    width: 50%;
-    /* Задаем ширину элементов 50%, чтобы они размещались по два на строку */
-  }
-  .table-body {
-    max-height: calc(80vh - 1.6rem);
-    /* Уменьшаем максимальную высоту таблицы для лучшей адаптации */
-  }
-  table,
-  th,
-  td {
-    font-size: 14px;
-    /* Уменьшаем размер шрифта */
-  }
-}
-/* Для экранов шириной менее 576px */
-@media screen and (max-width: 576px) {
-  .menu-nav__list {
-    width: 100%;
-    /* Задаем ширину элементов 100%, чтобы они размещались по одному на строку */
-  }
-  table,
-  th,
-  td {
-    font-size: 12px;
-    /* Уменьшаем размер шрифта */
-  }
 }
