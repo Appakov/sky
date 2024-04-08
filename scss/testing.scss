@@ -1,0 +1,214 @@
+
+.testing {
+    margin-top: 40px;
+
+    &-inner {
+        margin: 0 auto;
+        width: 80%;
+        min-height: 80vh;
+        height: 100%;
+        background-color: rgb(220, 220, 220);
+        backdrop-filter: blur(20px);
+        box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
+
+        border: 1px solid #fff;
+
+
+    }
+
+    &-select {
+        display: flex;
+        align-items: center;
+        background-color: rgb(220, 220, 220);
+        backdrop-filter: blur(20px);
+        // box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
+        box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+        border: 1px solid #fff;
+        margin: 30px 60px 80px;
+        height: 80px;
+
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        gap: 60px;
+    }
+
+    &-link-result {
+        border-radius: 5px;
+        padding: 7px 20px;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    &-link-assigned {
+        border-radius: 5px;
+        padding: 7px 20px;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    &-window {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-color: rgb(220, 220, 220);
+        backdrop-filter: blur(20px);
+        box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+        border: 1px solid #fff;
+        margin: 30px;
+        min-height: 350px;
+        padding-bottom: 50px;
+    }
+
+    &-cards {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 66px;
+        row-gap: 50px;
+
+
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 auto;
+        width: 270px;
+        height: 170px;
+        border-radius: 20px;
+        background-color: #FFF2CC;
+        padding: 30px 20px 120px;
+    }
+
+    &-card-2 {
+        background-color: #E2F0D9;
+    }
+
+    &-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-window {
+        background-color: rgb(220, 220, 220);
+        backdrop-filter: blur(20px);
+        box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+        border: 1px solid #fff;
+        margin: 30px;
+        min-height: 350px;
+        padding-bottom: 50px;
+    }
+
+    &-table {
+        display: none;
+        width: 90%;
+        margin: 20px auto 0;
+        border-collapse: collapse;
+
+        th {
+            color: rgb(46, 117, 182);
+        }
+
+    }
+
+    &-table th,
+    &-table td {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #000;
+    }
+
+    &-responsive {
+        overflow-x: auto;
+    }
+}
+
+.testing-result {
+    margin-top: 40px;
+
+    &-inner {
+        margin: 0 auto;
+        width: 80%;
+        min-height: 80vh;
+        height: 100%;
+        background-color: rgb(220, 220, 220);
+        backdrop-filter: blur(20px);
+        box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
+        border: 1px solid #fff;
+
+
+    }
+
+    &-select {
+        display: flex;
+        align-items: center;
+        background-color: rgb(220, 220, 220);
+        backdrop-filter: blur(20px);
+        // box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
+        box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+        border: 1px solid #fff;
+        margin: 30px 60px 80px;
+        height: 80px;
+
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        gap: 60px;
+    }
+
+    &-link-result {
+        border-radius: 5px;
+        padding: 7px 20px;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    &-link-assigned {
+        border-radius: 5px;
+        padding: 7px 20px;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    &-window {
+        background-color: rgb(220, 220, 220);
+        backdrop-filter: blur(20px);
+        box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+        border: 1px solid #fff;
+        margin: 30px;
+        min-height: 350px;
+        padding-bottom: 50px;
+    }
+
+    &-table {
+        width: 90%;
+        margin: 20px auto 0;
+        border-collapse: collapse;
+
+        th {
+            color: rgb(46, 117, 182);
+        }
+
+    }
+
+    &-table th,
+    &-table td {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #000;
+    }
+
+    &-responsive {
+        overflow-x: auto;
+    }
+}

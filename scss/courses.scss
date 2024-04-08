@@ -1,0 +1,118 @@
+.courses {
+  margin-top: 40px;
+  &-inner {
+    margin: 0 auto;
+    width: 80%;
+    min-height: 80vh;
+    height: 100%;
+    background-color: rgb(220, 220, 220);
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
+
+    border: 1px solid #fff;
+
+    
+  }
+
+  &-select {
+    display: flex;
+    align-items: center;
+    background-color: rgb(220, 220, 220);
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
+    border: 1px solid #fff;
+    margin: 30px 60px 80px;
+    height: 150px;
+  }
+
+  &-btn {
+    display: flex;
+    margin: 0 auto;
+    gap: 70px;
+
+    &-programming {
+      padding: 10px 4px;
+      background-color: transparent;
+      border-radius: 4px;
+     
+      font-weight: bold;
+      font-size: 20px;
+      // добавила размер font-size: ;
+    }
+
+    &-languages {
+      padding: 10px 48px;
+      background-color: transparent;
+      border-radius: 4px;
+      
+      font-weight: bold;
+      font-size: 20px;
+      // добавила размер font-size: ;
+    }
+
+    &-computer-grammer {
+      padding: 10px 9px;
+      background-color: transparent;
+      border-radius: 4px;
+      
+      font-weight: bold;
+      font-size: 20px;
+      // добавила размер font-size: ;
+    }
+  }
+
+  &-window {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: rgb(220, 220, 220);
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+    border: 1px solid #fff;
+    margin: 30px;
+    min-height: 350px;
+    padding-bottom: 50px;
+  }
+
+  &-all {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  &-cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 66px;
+    row-gap: 50px;
+   
+  }
+
+  &-card {
+    margin: 0 auto;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #E2F0D9;
+    padding: 30px 20px 120px;
+  }
+
+  &-card-2 {
+    background-color: #FFF2CC;
+  }
+
+  &-text-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
+  }
+
+  &-link {
+    background-color: purple;
+    color: #fff;
+    padding: 4px 9px;
+    border-radius: 5px;
+  }
+}

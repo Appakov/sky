@@ -107,8 +107,34 @@ modal.addEventListener('click', e => {
     e.currentTarget.classList.remove('open');
 })
 
-// chatbot
-window.embeddedChatbotConfig = {
-    chatbotId: "oeaEYDS_kztqLDu1jbPh7",
-    domain: "www.chatbase.co"
-}
+//courses
+document.addEventListener('DOMContentLoaded', () => {
+    const allCourses = document.querySelectorAll('.courses-card');
+    const btnProgramming = document.querySelector('.courses-btn-programming');
+    const btnLanguages = document.querySelector('.courses-btn-languages');
+    const btnCompLiteracy = document.querySelector('.courses-btn-computer-grammer');
+
+    btnProgramming.addEventListener('click', () => filterCourses('programming'));
+    btnLanguages.addEventListener('click', () => filterCourses('language'));
+    btnCompLiteracy.addEventListener('click', () => filterCourses('comp-literacy'));
+
+    function filterCourses(category) {
+        allCourses.forEach(card => {
+            if (card.classList.contains(category)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+});
+document.querySelectorAll('.courses-link').forEach(button => {
+    button.addEventListener('click', function() {
+        const contactType = this.getAttribute('data-contact');
+        if (contactType === 'whatsapp') {
+            const phoneNumber = this.getAttribute('data-phone');
+            window.location.href = `https://wa.me/${phoneNumber}`;
+        }
+    });
+});
+

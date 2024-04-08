@@ -1,17 +1,15 @@
 .wrapper {
-  background-image: url("../images/back1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#800080), color-stop(10.1%, #7c347c), color-stop(19.1%, #a457a4), color-stop(33.6%, #cb79cb), color-stop(44.1%, #d48ad4), color-stop(65.6%, #e9c3e9), color-stop(75.1%, #f3dcf3), color-stop(87.6%, #fefafe));
+  background-image: linear-gradient(180deg, #800080 0%, #7c347c 10.1%, #a457a4 19.1%, #cb79cb 33.6%, #d48ad4 44.1%, #e9c3e9 65.6%, #f3dcf3 75.1%, #fefafe 87.6%);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.header {
+  background-color: #000;
 }
 
 .nav {
@@ -32,6 +30,11 @@
   display: -ms-flexbox;
   display: flex;
   gap: 100px;
+}
+@media (max-width: 941px) {
+  .menu {
+    display: none;
+  }
 }
 .menu__link {
   color: #fff;
@@ -124,7 +127,6 @@
 .modal__box {
   position: relative;
   max-width: 500px;
-  width: 500px;
   padding: 45px;
   z-index: 1;
   margin: 30px 15px;
@@ -192,99 +194,215 @@
   font-size: 25px;
 }
 
-.date {
-  padding-right: 20px;
-  color: #fff;
+.background {
+  margin-top: 70px;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fffdfd;
+  padding: 33px 0;
+  overflow: auto;
+}
+.background::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
-.time-table__title {
+.wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 36px;
+  margin: 0 33px;
 }
 
-.time-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-  height: 90vh;
-  border-radius: 20px;
-  padding-top: 20px;
-  background-color: rgba(255, 255, 255, 0.3333333333);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
-  -webkit-box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3333333333);
-          box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3333333333);
-  overflow: hidden;
-}
-
-.menu-nav {
-  padding-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 25px;
-}
-.menu-nav__link {
-  color: #fff;
-}
-
-.table-body {
-  width: 95%;
-  max-height: calc(89% - 1.6rem);
-  background-color: rgba(255, 255, 255, 0.7333333333);
-  margin: 0 auto;
+.timetable-wrap {
   overflow: auto;
-  border-radius: 20px;
+  border-radius: 5px;
+  width: 45%;
+  height: 100vh;
+  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(250, 235, 252, 0.69);
 }
-.table-body::-webkit-scrollbar {
+.timetable-wrap::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-table th {
-  padding: 10px;
+.timetable {
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+}
+.timetable::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.timetable-flex {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+  border-radius: 5px;
+}
+.timetable-date {
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(216, 171, 243, 0.27);
+}
+.timetable-date__title {
+  font-family: "Inter", sans-serif;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: start;
+  padding-left: 14px;
+  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #edf2cf;
+  font-size: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-table,
-th,
-td {
-  padding: 20px 0;
+.raspisanie {
+  width: 100%;
   border-collapse: collapse;
+}
+.raspisanie th {
+  background: #f6ebff;
+}
+.raspisanie td {
+  background: #fffcfc;
+}
+.raspisanie th,
+.raspisanie td {
+  border: 1px solid #c3bcbc;
+  border-radius: 2px;
   text-align: center;
+  padding: 12px 7px;
 }
 
-th {
-  background-color: rgba(213, 209, 222, 0.9960784314);
-  cursor: pointer;
-  text-transform: capitalize;
+.semestrs-time-parent {
+  margin-top: 28px;
+  margin-left: 21px;
+  margin-bottom: 37px;
 }
 
-.th-transparent {
-  display: none;
+.semestrs-time {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #000;
+  padding: 5px 10px;
+  border: 1px solid #f2ed77;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fffbfb;
 }
 
-tr:last-child {
-  border-bottom: 5px solid green;
+.semestrs {
+  border-radius: 5px;
+  padding-top: 59px;
+  padding-left: 36px;
+  padding-right: 39px;
+  width: 55%;
+  height: 100vh;
+  overflow: auto;
+  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(250, 235, 252, 0.69);
 }
-tr:first-child {
-  border: none;
+.semestrs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
-
-.day-start {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  letter-spacing: 3px;
-  white-space: nowrap;
+.semestrs__wrap {
+  gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.semestrs__card {
+  width: 131px;
+  height: 157px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.6%, #fdfcff), color-stop(24.1%, #e8d2f9), color-stop(50.1%, #cca5f3), color-stop(74.1%, #ad85ef), color-stop(87.6%, #ac5eea), to(#9315e0));
+  background: linear-gradient(180deg, #fdfcff 2.6%, #e8d2f9 24.1%, #cca5f3 50.1%, #ad85ef 74.1%, #ac5eea 87.6%, #9315e0 100%);
+}
+.semestrs__year {
+  margin-top: 4px;
+  margin-bottom: 35px;
+}
+.semestrs__link-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.semestrs__link {
+  padding: 2px 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #b538c9;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fffdfd;
+}
+.semestrs__grade-wrap {
+  margin-right: 5px;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.semestrs__grade {
+  padding: 1px 3px;
+  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fcffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5a555b;
 }

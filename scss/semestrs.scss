@@ -1,0 +1,257 @@
+.group {
+    &__inner {
+        margin-top: 41px;
+        display: flex;
+        align-items: center;
+        gap: 44px;
+        justify-content: space-between;
+    }
+
+    // .group__title-wrap
+
+    &__title-wrap {
+        height: 54px;
+        width: 35%;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #fffdfd;
+    }
+
+    // .group__title
+
+    &__title {
+        font-family: "Inter", serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #000;
+        padding: 15px 241px 15px 43px;
+    }
+
+    // .group__link
+
+    &__link {
+        width: 65%;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #fffdfd;
+        padding: 15px 0 15px 43px;
+    }
+
+    // .group__tab
+
+    &__tab {
+        display: flex;
+        gap: 65px;
+
+    }
+
+    // .group__tab-list
+
+    &__tab-list {}
+
+    // .group__tab-link
+
+    &__tab-link {
+        color: #000;
+    }
+
+    .background {
+        padding-top: 39px;
+        margin-top: 52px;
+    }
+}
+
+.article-content {
+    margin-left: 54px;
+    margin-bottom: 25px;
+}
+
+.surname {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.band-group {
+    display: flex;
+    gap: 78px;
+    margin-bottom: 15px;
+}
+
+.band {
+    font-family: "Inter", ;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+
+.band-direction {
+    font-family: "Inter", ;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+}
+
+.term-current {
+    display: flex;
+    gap: 68px;
+    margin-bottom: 15px;
+}
+
+.term {
+    font-family: "Inter", ;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+
+.current-semestr {
+    font-family: "Inter", ;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+}
+
+.achievement {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+
+.window-info {
+    width: 85%;
+    margin-left: 52px;
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fcfcfc;
+    margin-bottom: 55px;
+    overflow-y: auto;
+}
+
+.column-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 17px;
+    border-bottom: 1px solid #a3a0a0;
+}
+
+.disciple {}
+
+.info-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 13px;
+}
+
+.info-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #5f5c5c;
+}
+
+.info-grade {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+}
+
+.grade-our {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #972222;
+}
+
+.btn-learn-info {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #0c0b0b;
+    padding: 9px 39px;
+    margin-right: 62px;
+    background: #d3f4aa;
+}
+
+.popup {
+    /* Примерный CSS для модальных окон */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 7;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+
+    &__box {
+        position: relative;
+        width: 874px;
+        height: 658px;
+        padding: 41px 30px 75px;
+        z-index: 1;
+        margin: 0 auto 0;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #fffdfd;
+        transform: scale(0);
+        transition: transform .8s;
+    }
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+
+        .popup__box {
+            transform: scale(1);
+        }
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border: none;
+        background-color: transparent;
+        padding: 5px;
+        cursor: pointer;
+    }
+}
+
+.semestrs-disciple {
+    margin-bottom: 27px;
+}
+
+.column-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 92px 18px 26px;
+    border-bottom: 1px solid #959090;
+    font-weight: 500;
+    font-size: 15px;
+    color: #656363;
+    font-family: "Inter", sans-serif;
+}
+
+.form-control {}
+
+.form-exem {}
