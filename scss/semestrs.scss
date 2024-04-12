@@ -1,76 +1,78 @@
 .group {
-    &__inner {
-        margin-top: 41px;
-        display: flex;
+
+    // .group__content
+
+    &__content {
+        margin-top: 42px;
         align-items: center;
+        display: flex;
         gap: 44px;
-        justify-content: space-between;
+        margin-bottom: 52px;
     }
 
-    // .group__title-wrap
+    // .group__content-title
 
-    &__title-wrap {
+    &__content-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 54px;
-        width: 35%;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background: #fffdfd;
+        width: 35%;
+        font-size: 24px;
     }
 
-    // .group__title
+    // .group__content-tab
 
-    &__title {
-        font-family: "Inter", serif;
-        font-weight: 500;
-        font-size: 20px;
-        color: #000;
-        text-align: center;
-        padding-top: 15px;
+    &__content-tab {
+        padding: 7px 43px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #fffdfd;
+        width: 65%;
+        display: flex;
+        gap: 20px;
     }
 
-    // .group__link
+    // .group__content-btn
 
-    &__link {
+    &__content-btn {
+        width: 50px;
+        height: 40px;
         display: flex;
         align-items: center;
-        gap: 20px;
-        width: 65%;
-        height: 54px;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        background: #fffdfd;
-        padding: 7px 37px;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s;
 
-        &::-webkit-scrollbar {
-            width: 0;
-            height: 0;
+        &.active {
+            background-color: #F6CBF7;
+
         }
     }
 
-    // .group__tab
+    // .group__window
 
+    &__window {
+        display: none;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #fffdfd;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+        }
 
-    // .group__tab-list
-
-    &__tab-list {}
-
-    // .group__tab-link
-
-    &__tab-link {
-        border: none;
-        background-color: transparent;
-        width: 50px;
-        height: 40px;
-        color: #000;
-        cursor: pointer;
-    }
-
-    .background {
-        padding-top: 39px;
-        margin-top: 52px;
-
+        &.active {
+            display: block;
+        }
     }
 }
 
 .article-content {
+    padding-top: 39px;
     margin-left: 54px;
     margin-bottom: 25px;
 }
@@ -220,6 +222,11 @@
         background: #fffdfd;
         transform: scale(0);
         transition: transform .8s;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+        }
     }
 
     &.open {
@@ -262,8 +269,4 @@
     font-size: 15px;
     color: #656363;
     font-family: "Inter", sans-serif;
-}
-
-.red {
-    background-color: red;
 }
