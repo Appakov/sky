@@ -24,3 +24,4 @@ testingCompleteBtn.onclick = () => {
 popupСompleteСloseBtn.onclick = () => {
     PopupComplete.classList.remove('open')
 }
+
