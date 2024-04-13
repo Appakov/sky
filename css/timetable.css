@@ -40,27 +40,50 @@
   color: #000;
 }
 .group__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
   height: 54px;
   width: 65%;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #fffdfd;
-  padding: 15px 0 15px 43px;
+  padding: 15px 43px;
   font-weight: 700;
   font-size: 17px;
   color: #000;
   font-family: "Inter", sans-serif;
 }
-.group__tab {
+.group__tab-btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.group__tab-link {
-  color: #000;
+.group__tab-btn.active {
+  background-color: #F6CBF7;
 }
 
+.timetable-page {
+  display: none;
+}
+.timetable-page.active {
+  display: block;
+}
 .timetable-page__inner {
   width: 100%;
   height: 90vh;

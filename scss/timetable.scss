@@ -43,36 +43,43 @@
     // .group__link
 
     &__link {
+        display: flex;
+        align-items: center;
+        gap: 25px;
         height: 54px;
         width: 65%;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background: #fffdfd;
-        padding: 15px 0 15px 43px;
+        padding: 15px 43px;
         font-weight: 700;
         font-size: 17px;
         color: #000;
         font-family: "Inter", sans-serif;
     }
 
-    // .group__tab
-
-    &__tab {
+    &__tab-btn {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        width: 50px;
+        height: 40px;
         display: flex;
-        gap: 65px;
-    }
+        justify-content: center;
+        align-items: center;
 
-    // .group__tab-list
+        &.active {
+            background-color: #F6CBF7;
 
-    &__tab-list {}
-
-    // .group__tab-link
-
-    &__tab-link {
-        color: #000;
+        }
     }
 }
 
 .timetable-page {
+    display: none;
+
+    &.active {
+        display: block;
+    }
 
     // .timetable-page__inner
 
@@ -81,7 +88,8 @@
         height: 90vh;
         background-color: #fff;
         overflow-y: auto;
-        &::-webkit-scrollbar{
+
+        &::-webkit-scrollbar {
             width: 0;
             height: 0;
         }
