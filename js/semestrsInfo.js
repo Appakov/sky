@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 });
-const testingCompleteBtn = document.querySelector('.testing-completebtn')
+const testingCompleteBtn = document.querySelector('.testing-complete__btn')
 const popupСompleteСloseBtn = document.querySelector('.popup-complete__close-btn')
 const PopupComplete = document.querySelector('.popup-complete')
 
