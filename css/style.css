@@ -126,7 +126,7 @@
 }
 .modal__box {
   position: relative;
-  max-width: 500px;
+  width: 450px;
   padding: 45px;
   z-index: 1;
   margin: 30px 15px;

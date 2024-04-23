@@ -17,86 +17,117 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <nav class="nav">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="menu">
-                        <li class="menu__list"><a href="home.html" class="menu__link"><ion-icon
-                                    name="home"></ion-icon></a>
-                        </li>
-                        <li class="menu__list"><a href="#" class="menu__link"><ion-icon name="receipt"></ion-icon></a>
-                        </li>
-                        <li class="menu__list"><a href="library.html" class="menu__link"><ion-icon
-                                    name="book"></ion-icon></a></li>
-                        <li class="menu__list"><a href="#" class="menu__link"><ion-icon name="search"></ion-icon></a>
-                        </li>
-                        <li class="menu__list"><a href="courses.html" class="menu__link"><ion-icon
-                                    name="create"></ion-icon></a>
-                        </li>
-                        <li class="menu__list"><a href="#" class="menu__link"><ion-icon
-                                    name="chatbubble"></ion-icon></a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="notifications.html" class="menu__link"><ion-icon
-                                    name="notifications"></ion-icon></a>
-                        </li>
-                    </ul>
-                    <div class="chatbot-darkmode">
-                        <button class="dark-mode-btn">
-                            <img src="../images/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
-                            <img src="../images/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-                        </button>
-                    </div>
-                </nav>
-                <div class="modal" id="my-modal">
-                    <div class="modal__box">
-                        <button class="modal__close-btn" id="close-my-modal-btn">
-                            <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                    fill="#333333" />
-                                <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                    fill="#333333" />
-                            </svg>
-                        </button>
-                        <div class="modal-menu">
-                            <div class="modal-menu__icon-list">
-                                <div class="modal__icon"><ion-icon name="home"></ion-icon></div>
-                                <div class="modal__list"><a href="home.html">Главная</a></div>
-                            </div>
-                            <div class="modal-menu__icon-list">
-                                <div class="modal__icon"><ion-icon name="receipt"></ion-icon></div>
-                                <div class="modal__list"><a href="#">Тестирование</a></div>
-                            </div>
-                            <div class="modal-menu__icon-list">
-                                <div class="modal__icon"><ion-icon name="book"></ion-icon></div>
-                                <div class="modal__list"><a href="library.html">Библиотека</a></div>
-                            </div>
-                            <div class="modal-menu__icon-list">
-                                <div class="modal__icon"><ion-icon name="create"></ion-icon></div>
-                                <div class="modal__list"><a href="courses.html">Курсы</a></div>
-                            </div>
-                            <div class="modal-menu__icon-list">
-                                <div class="modal__icon"><ion-icon name="chatbubble"></ion-icon></div>
-                                <div class="modal__list"><a href="#">Задания</a></div>
-                            </div>
-                            <div class="modal-menu__icon-list">
-                                <div class="modal__icon"><ion-icon name="people"></ion-icon></div>
-                                <div class="modal__list"><a href="#">Рейтинг студента</a></div>
-                            </div>
-                            <div class="modal-menu__icon-list">
-                                <div class="modal__icon"><ion-icon name="notifications"></ion-icon></div>
-                                <div class="modal__list"><a href="notifications.html">Уведомление</a></div>
-                            </div>
-                        </div>
-                    </div>
+              <nav class="nav">
+                <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
+                <ul class="menu">
+                  <li class="menu__list">
+                    <a href="home.html" class="menu__link" title="Главная"><ion-icon name="home"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="testing.html" class="menu__link" title="Тестирование"><ion-icon name="receipt"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="library.html" class="menu__link" title="Библиотека"><ion-icon name="book"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link"><ion-icon name="search" title="Поиск"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="courses.html" class="menu__link" title="Курсы"><ion-icon name="create"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="tasks.html" class="menu__link"><ion-icon name="chatbubble" title="Задания"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="notifications.html" class="menu__link" title="Уведомления"><ion-icon name="notifications"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="profile.html" class="menu__link" title="Профиль студента"><ion-icon name="people"></ion-icon></a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="studentInfo.html" class="menu__link" title="Карточка студента"><ion-icon name="card"></ion-icon></a>
+                  </li>
+                </ul>
+                <div class="chatbot-darkmode">
+                  <button class="dark-mode-btn">
+                    <img src="../images/sun.svg" alt="Light mode" class="dark-mode-btn__icon" />
+                    <img src="../images/moon.svg" alt="Dark mode" class="dark-mode-btn__icon" />
+                  </button>
+                </div>
+              </nav>
+              <div class="modal" id="my-modal">
+                <div class="modal__box">
+                  <button class="modal__close-btn" id="close-my-modal-btn">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                      <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                    </svg>
+                  </button>
+                  <div class="modal-menu">
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="home"></ion-icon>
+                      </div>
+                      <div class="modal__list">
+                        <a href="home.html">Главная</a>
+                      </div>
+                    </div>
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="receipt"></ion-icon>
+                      </div>
+                      <div class="modal__list"><a href="testing.html">Тестирование</a></div>
+                    </div>
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="book"></ion-icon>
+                      </div>
+                      <div class="modal__list">
+                        <a href="library.html">Библиотека</a>
+                      </div>
+                    </div>
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="create"></ion-icon>
+                      </div>
+                      <div class="modal__list"><a href="courses.html">Курсы</a></div>
+                    </div>
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="chatbubble"></ion-icon>
+                      </div>
+                      <div class="modal__list"><a href="tasks.html">Задания</a></div>
+                    </div>
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="notifications"></ion-icon>
+                      </div>
+                      <div class="modal__list"><a href="notifications.html">Уведомление</a></div>
+                    </div>
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="people"></ion-icon>
+                      </div>
+                      <div class="modal__list"><a href="profile.html">Профиль студента
+                      </a></div>
+                    </div>
+                    <div class="modal-menu__icon-list">
+                      <div class="modal__icon">
+                        <ion-icon name="card"></ion-icon>
+                      </div>
+                      <div class="modal__list"><a href="studentInfo.html">Карточка студента
+                      </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </header>
+          </header>
         <div class="student-info">
             <div class="container">
                 <div class="student-info-inner">
