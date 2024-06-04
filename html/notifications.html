@@ -31,10 +31,6 @@
             <li class="menu__list">
               <a href="library.html" class="menu__link" title="Библиотека"><ion-icon name="book"></ion-icon></a>
             </li>
-           
-            <li class="menu__list">
-              <a href="courses.html" class="menu__link" title="Курсы"><ion-icon name="create"></ion-icon></a>
-            </li>
             <li class="menu__list">
               <a href="tasks.html" class="menu__link"><ion-icon name="chatbubble" title="Задания"></ion-icon></a>
             </li>
@@ -89,12 +85,6 @@
               </div>
               <div class="modal-menu__icon-list">
                 <div class="modal__icon">
-                  <ion-icon name="create"></ion-icon>
-                </div>
-                <div class="modal__list"><a href="courses.html">Курсы</a></div>
-              </div>
-              <div class="modal-menu__icon-list">
-                <div class="modal__icon">
                   <ion-icon name="chatbubble"></ion-icon>
                 </div>
                 <div class="modal__list"><a href="tasks.html">Задания</a></div>
@@ -124,28 +114,28 @@
         </div>
       </div>
     </header>
-    <div class="notifications">
+    
+    <section class="notification">
       <div class="container">
-        <div class="notifications-inner">
-          <div class="notifications-inner-window">
-            <div class="notifications-column">
-              <div class="notifications-flex">
-                <p class="notifications-lesson">Ты пропустил урок по дисциплине «Теория алгоритмов
-                </p>
-                <p class="notifications-date">22.02.2024.
-                </p>
-              </div>
-              <div class="notifications-flex">
-                <p class="notifications-lesson">Ты пропустил урок по дисциплине «Теория алгоритмов
-                </p>
-                <p class="notifications-date">23.02.2024.
-                </p>
-              </div>
+        <div class="notification__inner">
+          <div class="notification__content">
+            <time datetime="26-05-2024" class="notification__date">26.05.2024</time>
+            <div class="notification__text-wrap">
+              <p class="notification__text">Привет <img src="../images/emoji-hi-notification.png" alt="">, ты пропустил сегодня урок по дисциплине “Теория алгоритмов” <img src="../images/notification-emoji-cry.png" alt=""></p>
             </div>
+            <img src="../images/notification-robot-1.png" alt="" class="notification__notification-images">
+          </div>
+          <div class="notification__content notification__content--active">
+            <time datetime="26-05-2024" class="notification__date">26.05.2024</time>
+            <div class="notification__text-wrap">
+              <p class="notification__text">Привет <img src="../images/emoji-hi-notification.png" alt="">, ты пропустил сегодня урок по дисциплине “Теория алгоритмов” <img src="../images/notification-emoji-cry.png" alt=""></p>
+            </div>
+            <img src="../images/notification-robot-2.png" alt="" class="notification__notification-images">
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
   </div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -6,12 +6,6 @@
   width: 80%;
   min-height: 80vh;
   height: 100%;
-  background-color: rgb(220, 220, 220);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  -webkit-box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
-          box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
-  border: 1px solid #fff;
 }
 .tasks-select {
   display: -webkit-box;
@@ -20,11 +14,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(220, 220, 220);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  -webkit-box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
-          box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
+  background: rgba(255, 253, 253, 0.95);
   border: 1px solid #fff;
   margin: 0 30px 26px;
   height: 80px;
@@ -47,11 +41,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
-  background-color: rgb(220, 220, 220);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  -webkit-box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
-          box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 253, 253, 0.95);
   border: 1px solid #fff;
   margin: 0 30px;
   min-height: 350px;

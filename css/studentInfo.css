@@ -431,11 +431,11 @@
   margin: 0 auto;
   width: 90%;
   height: 82vh;
-  background-color: rgb(220, 220, 220);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  -webkit-box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
-          box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
+  background: rgba(255, 253, 253, 0.95);
   border: 1px solid #fff;
 }
 .student-info-select {
@@ -445,17 +445,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(220, 220, 220);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  -webkit-box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
-          box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
+  background: rgba(255, 253, 253, 0.95);
   border: 1px solid #fff;
   margin: 20px 30px 26px;
   height: 80px;
+  gap: 50px;
+}
+.student-info-select button {
+  border-radius: 20px;
+  border: 1px solid #DAA520;
+  background-color: #D7D13E;
+  padding: 15px 17px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
 }
 .student-info-btn {
-  margin-left: 53px;
   padding: 15px 17px;
   border-radius: 20px;
   border: 1px solid #DAA520;
@@ -464,11 +476,11 @@
   font-weight: bold;
 }
 .student-info-window {
-  background-color: rgb(220, 220, 220);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  -webkit-box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
-          box-shadow: 10px 10px 5px -4px rgb(148, 148, 148);
+  background: rgba(255, 253, 253, 0.95);
   border: 1px solid #fff;
   margin: 0 30px;
   padding-top: 25px;

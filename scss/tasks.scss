@@ -6,21 +6,14 @@
         width: 80%;
         min-height: 80vh;
         height: 100%;
-        background-color: rgb(220, 220, 220);
-        backdrop-filter: blur(20px);
-        box-shadow: 10px 10px 5px -4px rgba(142, 142, 142, 0.48);
-
-        border: 1px solid #fff;
-
-
     }
 
     &-select {
         display: flex;
         align-items: center;
-        background-color: rgb(220, 220, 220);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(20px);
-        box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+        background: rgba(255, 253, 253, 0.95);
         border: 1px solid #fff;
         margin: 0 30px 26px;
         height: 80px;
@@ -41,9 +34,8 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        background-color: rgb(220, 220, 220);
-        backdrop-filter: blur(20px);
-        box-shadow: 10px 10px 5px -4px rgba(148, 148, 148, 1);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: rgba(255, 253, 253, 0.95);
         border: 1px solid #fff;
         margin: 0 30px;
         min-height: 350px;

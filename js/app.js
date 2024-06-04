@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 document.querySelectorAll('.courses-link').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         const contactType = this.getAttribute('data-contact');
         if (contactType === 'whatsapp') {
             const phoneNumber = this.getAttribute('data-phone');
@@ -138,3 +138,67 @@ document.querySelectorAll('.courses-link').forEach(button => {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const resultBtn = document.querySelector('.testing__link-result');
+    const assignedBtn = document.querySelector('.testing__link-assigned');
+    const resultContent = document.querySelector('.testing__cards-result');
+    const assignedContent = document.querySelector('.testing__cards-naz');
+
+    // Set initial active tab
+    resultBtn.classList.add('active');
+    resultContent.classList.add('active');
+
+    // Event listener for result button
+    resultBtn.addEventListener('click', function () {
+        resultBtn.classList.add('active');
+        assignedBtn.classList.remove('active');
+        resultContent.classList.add('active');
+        assignedContent.classList.remove('active');
+    });
+
+    // Event listener for assigned button
+    assignedBtn.addEventListener('click', function () {
+        assignedBtn.classList.add('active');
+        resultBtn.classList.remove('active');
+        assignedContent.classList.add('active');
+        resultContent.classList.remove('active');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const btnsStart = document.querySelectorAll('.testing__card-overlay');
+    
+    const modal = document.querySelector('.modal-start');
+
+    // Функция для отображения модального окна
+    function openModal() {
+        modal.style.opacity = 1;
+        modal.style.visibility = 'visible';
+    }
+
+    // Функция для скрытия модального окна
+    function closeModal() {
+        modal.style.opacity = 0;
+        modal.style.visibility = 'hidden';
+    }
+
+    // Добавление обработчика событий ко всем карточкам
+    btnsStart.forEach(card => {
+        card.addEventListener('click', openModal);
+    });
+
+    // Добавление возможности закрыть модальное окно по клику вне его содержимого
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Добавление возможности закрыть модальное окно по клику вне его содержимого
+    window.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+});
